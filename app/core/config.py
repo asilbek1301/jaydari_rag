@@ -22,8 +22,9 @@ class Settings(BaseSettings):
     llm_model: str
     llm_adapter_path: str | None = None
     llm_device: str = 'cpu'
-    llm_max_new_tokens: int = 256
+    llm_max_new_tokens: int
     llm_temperature: float = 0.2
+    llm_adapter_path: str | None = None
 
     rag_enabled: bool = True
     rag_mode: str = 'auto'
